@@ -1,5 +1,7 @@
 .App {
+  /*
   text-align: center;
+  */
 }
 
 .App-logo {
@@ -36,3 +38,82 @@
     transform: rotate(360deg);
   }
 }
+
+*{ box-sizing: border-box;}
+html {background:#000;}
+body {
+  text-align:left;
+  max-width:450px;
+  margin:2rem auto;
+  padding:1rem;
+  border-radius:10px;
+  overflow: scroll;
+  background: #fff;
+}
+a {text-decoration:none;}
+ul, li {margin:0;padding:0;list-style:none;}
+nav ul li {display:inline-block; margin:0 1rem;}
+
+.d-none {
+  display:none;
+}
+
+.flex { 
+  display:flex;
+}
+
+nav a.active {text-decoration:underline;}
+
+.alert {
+  padding:1rem;
+  border-radius:5px;
+  margin:1rem 0;
+}
+
+.success {background-color: #28a745;}
+.warning {background-color: #ffc107;}
+
+form .form-group {
+  margin-bottom:1rem;
+}
+
+form .form-group > * {
+  display:block;
+  text-align:left;
+  width:100%;
+  margin-bottom:.5rem;
+}
+
+form button {
+  width:100%;
+  padding:.5rem 1rem;
+  background:#fff;
+  border-radius:5px;
+  letter-spacing:.1rem;
+}
+
+form input {padding:.5rem;}
+form button:hover {  
+  background:#ddd;
+  cursor:pointer;
+}
+
+.products li {
+  padding:.5rem;
+  border:1px solid silver;
+  border-radius:5px;
+  margin-bottom:.5rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.products li:hover {
+  border-color:royalblue;
+  cursor:pointer;
+}
+
+.searchbar {display:flex;}
+.searchbar input {width:100%;}
+.searchbar button {width:auto;}
+
+.alert {display:flex;justify-content:space-between;}
